@@ -1,6 +1,6 @@
 import os
-from model import network_model
-# from model_vgg import build_vgg16_unet
+#from model import network_model
+from model_vgg import build_vgg16_unet
 from tensorflow.keras.callbacks import ModelCheckpoint,EarlyStopping,ReduceLROnPlateau
 import datetime
 from time import strftime
