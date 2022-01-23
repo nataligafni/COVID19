@@ -25,8 +25,8 @@ class MultiTaskModel():
 
     def run_model(self):
 
-        model = network_model()
-        # model = build_vgg16_unet(params.dim)
+        #model = network_model()
+        model = build_vgg16_unet(params.dim)
         if self.phase == 'train':
 
             os.mkdir(config.run_dir)
