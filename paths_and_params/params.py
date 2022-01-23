@@ -1,7 +1,7 @@
 class Params():
     def __init__(self):
 
-        self.data_type = 'seg_only' #'seg_only' #'not_seg' # 'all'
+        self.data_type = 'not_seg' #'seg_only' #'not_seg' # 'all'
 
         self.feature_maps = 64
         self.kernel = 3
