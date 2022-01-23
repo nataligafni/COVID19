@@ -76,7 +76,7 @@ if __name__ == '__main__':
         train_names, validation_names, test_names = not_seg(train_names), not_seg(validation_names),\
                                                     not_seg(test_names)
 
-    Training_generator = DataGenerator(train_names, do_augs=False)
+    Training_generator = DataGenerator(train_names, do_augs=True)
     Validation_generator = DataGenerator(validation_names)
     Test_generator = DataGenerator(test_names, shuffle=False, batch_size=1)
 
