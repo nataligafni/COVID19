@@ -144,7 +144,7 @@ class DataGenerator(keras.utils.Sequence):
 
         y = {"seg_loss": Ymask, "re_loss": X_masked, "class_loss": Ylabel}
 
-        return X_masked, y
+        return X, y
 
     def resize_images(self,x):
         X_data_resized = skimage.transform.resize(x,self.size)
